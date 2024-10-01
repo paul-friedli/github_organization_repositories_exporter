@@ -14,6 +14,7 @@ Thumbs.db
 # Version compilées
 /web-app/WEB-INF
 build/
+/target
 /bin
 
 # Repos téléchargés
