@@ -1,0 +1,23 @@
+######################################
+# Fichiers à ignorer lors des push git
+######################################
+
+# Fichiers OSX
+Thumbs.db
+.DS_Store
+
+# Autres fichiers pas souhaités
+
+# Fichiers logs
+*.log
+
+# Version compilées
+/web-app/WEB-INF
+build/
+/bin
+
+# Repos téléchargés
+/downloaded_repos
+
+# Fichiers de contenu de la BD MongoDB
+mongodb/data/*
