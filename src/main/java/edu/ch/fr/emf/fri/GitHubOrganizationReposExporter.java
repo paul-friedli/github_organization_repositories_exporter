@@ -17,9 +17,8 @@ import org.eclipse.jgit.util.FileUtils;
 /**
  * Clone tous les repos d'une organisation GitHub au format ZIP.<br>
  * <br>
- * Ce qui revient au même que, manuellement, ouvrir chaque repo dans un
- * navigateur, puis de cliquer sur "Code" et "Download ZIP" pour les stocker
- * dans un dossier spécifique.
+ * Ce qui revient au même que, manuellement et pour chaque repo, le cloner
+ * à l'aide de par exemple VSC, puis de zipper le dossier cloné.
  * 
  * @author Paul Friedli <paul.friedli@edufr.ch>
  * @since 26.09.2024
