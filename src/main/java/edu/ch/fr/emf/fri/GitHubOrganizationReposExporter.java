@@ -73,9 +73,6 @@ public class GitHubOrganizationReposExporter {
                 String repoUrl = repo.getString("clone_url");
                 String strAvance = df3.format(i + 1) + "/" + df3.format(nbreTotalRepos);
 
-                // String repoUrlWithToken = repoUrl.replace("https://", "https://" +
-                // GITHUB_TOKEN + "@");
-
                 System.out.print("  - " + strAvance + " [" + repoName + "] : ");
 
                 // Clonage du repository via JGit
