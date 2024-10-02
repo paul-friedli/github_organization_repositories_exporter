@@ -22,7 +22,7 @@ private final static String GITHUB_TOKEN = "ghp_xyzxyzxyzxyzxyzxyzxzxz";
 private final static String LOCAL_DESTINATION_FOLDER = "./downloaded_repos/";
 ```
 
-Par défaut, avec `"./downloaded_repos/"`, les repos seront téléchargés et zippés dans le sous-dossier `downloaded_repos` déjà existant à la racine de ce projet.
+Par défaut, avec `"./downloaded_repos/"`, les repos seront téléchargés et zippés dans le sous-dossier `downloaded_repos` à la racine de ce projet.
 
 ## Comment générer son "token personnel" GitHub
 
