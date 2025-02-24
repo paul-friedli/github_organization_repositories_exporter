@@ -20,5 +20,3 @@ build/
 # Repos téléchargés
 /downloaded_repos
 
-# Fichiers de contenu de la BD MongoDB
-mongodb/data/*
