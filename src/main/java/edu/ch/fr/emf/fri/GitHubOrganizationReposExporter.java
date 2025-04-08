@@ -40,6 +40,13 @@ public class GitHubOrganizationReposExporter {
     // !)
     private final static String LOCAL_DESTINATION_FOLDER = "./downloaded_repos/";
 
+    // Le nombre de threads simultanés exportant un repo
+    private final static int MAX_CONCURRENT_THREADS_EXPORTING_REPOS = 8;
+
+    // Pas toucher !
+    private static final String GITHUB_API_BASE_URL = "https://api.github.com";
+    private final static int MAX_RETURNED_REPOS_PER_GITHUB_API_REQUEST = 64 + 32; // From 1 to 100
+
     public static void main(String[] args) throws IOException, GitAPIException {
 
         System.out.println();
@@ -114,10 +121,6 @@ public class GitHubOrganizationReposExporter {
         System.out.println("=====================================================================================");
         System.out.println();
     }
-
-    private static final String GITHUB_API_BASE_URL = "https://api.github.com";
-    private final static int MAX_RETURNED_REPOS_PER_GITHUB_API_REQUEST = 64 + 32; // From 1 to 100
-    private final static int MAX_CONCURRENT_THREADS_EXPORTING_REPOS = 8;
 
     private static void threadedRepositoryExportationAndCompression(RepoToExportAndZip repo) {
 
