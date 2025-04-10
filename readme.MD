@@ -5,7 +5,7 @@
 Ce programme Java va cloner puis zipper tous les repos d'une organisation dans un dossier local de votre choix.  
 > => Pratique pour consigner sur sharepoint le matériel d'enseignement utilisé dans le cadre d'un module utilisant GitHub.
 
-<img src="doc/Overview.png"/>
+<img src="doc/Overview.png" style="margin-left:2em;margin-top:0.5em;border-width:1px;border-color:#000;border-style:solid;"/>
 
 **N.B.** La méthode clonage + zippage a été préférée au téléchargement du ZIP afin d'avoir absolument tout du repo (pas seulement sa branche "master") et pour pouvoir éventuellement identifier après coup les changements intervenus depuis clonage.
 
