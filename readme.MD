@@ -66,6 +66,8 @@ En cas de soucis, lancez la commande Maven suivante `mvn clean install` dans le 
 
 Une fois terminé, il vous suffira de consigner les fichiers zip générés (sharepoint).
 
+N.B. Si Maven n'est pas installé sur votre poste => [https://maven.apache.org/](https://maven.apache.org/)
+
 ## Exemple d'exécution
 
 L'exécution prends un peu de temps (qui dépendra du volume à rapatrier).

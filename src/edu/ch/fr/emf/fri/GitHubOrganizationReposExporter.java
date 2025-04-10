@@ -94,6 +94,7 @@ public class GitHubOrganizationReposExporter {
             System.out.println(
                     "Erreur lors de la récupération des dépôts de l'organisation " + REMOTE_ORG_NAME + " : " + e);
             e.printStackTrace();
+            System.exit(-1);
         }
 
         System.out.println(
