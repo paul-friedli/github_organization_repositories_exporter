@@ -9,6 +9,9 @@ import okhttp3.Response;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import net.lingala.zip4j.ZipFile;
+import net.lingala.zip4j.model.ZipParameters;
+import net.lingala.zip4j.model.enums.CompressionLevel;
+
 import java.io.File;
 import java.io.IOException;
 import java.util.TreeSet;
@@ -169,7 +172,13 @@ public class GitHubOrganizationReposExporter {
 
     @SuppressWarnings("resource")
     private static void ZipFolder(String pathToRepoFolder) throws IOException {
-        new ZipFile(pathToRepoFolder + ".zip").addFolder(new File(pathToRepoFolder));
+
+        ZipParameters zipParameters = new ZipParameters();
+        zipParameters.setSymbolicLinkAction(ZipParameters.SymbolicLinkAction.INCLUDE_LINK_ONLY);
+        zipParameters.setCompressionLevel(CompressionLevel.ULTRA);
+
+        new ZipFile(pathToRepoFolder + ".zip").addFolder(new File(pathToRepoFolder), zipParameters);
+
         FileUtils.delete(new File(pathToRepoFolder), FileUtils.RECURSIVE + FileUtils.RETRY);
     }
 
